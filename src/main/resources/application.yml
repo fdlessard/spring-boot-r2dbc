@@ -1,0 +1,13 @@
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
+
+spring:
+ r2dbc:
+  url: r2dbc:postgresql://postgres@localhost:5432/postgres
+  username: postgres
+  password: secret
+  pool:
+   enabled: true
+   initial-size: 50
+   max-size: 100
